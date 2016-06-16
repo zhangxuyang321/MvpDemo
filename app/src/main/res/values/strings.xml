@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MvpDemo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--menu-->
+    <string name="drawer_news">每日新闻</string>
+    <string name="drawer_set">设置</string>
+    <string name="drawer_movie">电影日报</string>
+    <string name="drawer_img">花瓣美图</string>
+    <string name="drawer_food">诱惑美食</string>
+
+
+    <!--加载提示的view-->
+    <string name="loading_desc">努力加载中...</string>
+</resources>

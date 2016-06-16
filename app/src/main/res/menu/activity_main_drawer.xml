@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_news"
+            android:icon="@drawable/drawer_news"
+            android:title="@string/drawer_news" />
+        <item
+            android:id="@+id/drawer_movie"
+            android:icon="@drawable/drawer_movies"
+            android:title="@string/drawer_movie" />
+        <item
+            android:id="@+id/drawer_img"
+            android:icon="@drawable/dwear_img"
+            android:title="@string/drawer_img" />
+    </group>
+
+</menu>

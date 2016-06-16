@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base240dp"
+    android:layout_margin="@dimen/base5dp"
+    android:elevation="@dimen/base10dp"
+    app:cardCornerRadius="@dimen/base5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/movie_img"
+            android:layout_width="@dimen/base180dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/movie_title"
+                style="@style/baseText"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/base20dp"
+                tools:text="魔兽世界" />
+
+
+            <TextView
+                android:id="@+id/movie_storyBrief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/base15dp"
+                tools:text="剧情很好，很不错,讲了人类和兽人之间的战争，我喜欢！作为多年的魔兽玩家，感觉还可以哦，哦吼吼，哦吼吼哦吼吼哦吼吼哦吼吼哦吼吼哦吼吼哦吼吼哦吼吼哦吼吼哦吼吼" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

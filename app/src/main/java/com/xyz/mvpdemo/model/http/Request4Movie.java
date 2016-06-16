@@ -1,0 +1,48 @@
+package com.xyz.mvpdemo.model.http;
+
+import com.android.volley.NetworkResponse;
+import com.android.volley.ParseError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.toolbox.HttpHeaderParser;
+import com.google.gson.JsonSyntaxException;
+import com.xyz.mvpdemo.Util.GsonUtil;
+import com.xyz.mvpdemo.Util.Util;
+import com.xyz.mvpdemo.model.bean.ErrorBean;
+import com.xyz.mvpdemo.model.bean.MovieBean;
+import java.io.UnsupportedEncodingException;
+
+/**
+ * 作者：xy_z on 2016/6/4 11:58
+ * 邮箱：xyz@163.com
+ */
+public class Request4Movie extends Request<MovieBean> {
+    private Response.Listener<MovieBean> mListener;
+
+    public Request4Movie(String url, Response.Listener listener, Response.ErrorListener errorListener) {
+        super(Method.GET, url, errorListener);
+        mListener = listener;
+    }
+
+    @Override
+    protected Response<MovieBean> parseNetworkResponse(NetworkResponse response) {
+        String parsed = null;
+        try {
+            parsed = new String(response.data, HttpHeaderParser.parseCharset(response.headers));
+            MovieBean movieBean = GsonUtil.instance().fromJson(parsed, MovieBean.class);
+            return Response.success(movieBean, HttpHeaderParser.parseCacheHeaders(response));
+        } catch (JsonSyntaxException e) {
+            ErrorBean errorBean = GsonUtil.instance().fromJson(parsed, ErrorBean.class);
+            return Response.error(new ResponseError(errorBean.reason));
+        } catch (UnsupportedEncodingException e) {
+            return Response.error(new ParseError(e));
+        }
+    }
+
+    @Override
+    protected void deliverResponse(MovieBean response) {
+        if (null != mListener) {
+            mListener.onResponse(response);
+        }
+    }
+}
