@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 import com.xyz.mvpdemo.base.MyApplication;
+import com.xyz.mvpdemo.model.http.RequestManager;
 import com.xyz.mvpdemo.presenters.PresenterFactory;
 import com.xyz.mvpdemo.view.fragment.FragmentFactory;
 
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity
 
         //默认显示新闻fragment
         replaceFragment(TYPE, tag);
+
     }
 
 

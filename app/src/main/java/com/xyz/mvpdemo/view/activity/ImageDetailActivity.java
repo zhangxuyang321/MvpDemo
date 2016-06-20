@@ -25,6 +25,8 @@ import pub.devrel.easypermissions.EasyPermissions;
 
 /**
  * 图片大图显示类，可保存图片到本地
+ * 描述：图片的保存直接就是从ImageView中获取bitmap保存到本地
+ *       这里用到了EasyPermissions来处理6.0的权限问题
  */
 public class ImageDetailActivity extends BaseActivity implements EasyPermissions.PermissionCallbacks{
 
@@ -46,7 +48,7 @@ public class ImageDetailActivity extends BaseActivity implements EasyPermissions
     private void initData() {
         Intent intent = getIntent();
         if (intent != null) {
-            String bigImgUrl = intent.getStringExtra("imgUrl") + "_fw658";
+                String bigImgUrl = intent.getStringExtra("imgUrl") + "_fw658";
             pin_id = intent.getStringExtra("pin_id");
             Glide.with(this).load(bigImgUrl).placeholder(R.mipmap.zw).crossFade().into(bigImg);
         }

@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.xyz.mvpdemo.MainActivity;
 import com.xyz.mvpdemo.R;
+import com.xyz.mvpdemo.Util.Util;
 import com.xyz.mvpdemo.base.BaseFragment;
 import com.xyz.mvpdemo.contracts.MovieContract;
 import com.xyz.mvpdemo.model.bean.MovieBean;
