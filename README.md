@@ -9,6 +9,6 @@
 因为一些动画的需要，请保持RecyclerView 23.1.0或者更高
 
 #UI
-![1]()
+![1](https://github.com/zhangxuyang321/MvpDemo/blob/master/ui/1.png)
 
 
