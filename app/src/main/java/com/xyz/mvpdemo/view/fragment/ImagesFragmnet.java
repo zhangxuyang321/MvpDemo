@@ -52,7 +52,7 @@ public class ImagesFragmnet extends BaseFragment implements ImageContract.View, 
         img_list = (RecyclerView) view.findViewById(R.id.img_list);
         hinTv = (TextView) view.findViewById(R.id.hintTv);
         refreshLayout.setOnRefreshListener(this);
-        refreshLayout.setColorScheme(R.color.google_blue,
+        refreshLayout.setColorSchemeResources(R.color.google_blue,
                 R.color.google_green,
                 R.color.google_red,
                 R.color.google_yellow);
