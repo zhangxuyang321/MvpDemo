@@ -11,13 +11,9 @@
 #UI
 
 
-![1](https://github.com/zhangxuyang321/MvpDemo/blob/master/ui/1.png)
-![2](https://github.com/zhangxuyang321/MvpDemo/blob/master/ui/2.png)
+![1](https://github.com/zhangxuyang321/MvpDemo/blob/master/ui/1.gif)
+![2](https://github.com/zhangxuyang321/MvpDemo/blob/master/ui/2.gif)
 
-![3](https://github.com/zhangxuyang321/MvpDemo/blob/master/ui/3.png)
-![4](https://github.com/zhangxuyang321/MvpDemo/blob/master/ui/4.png)
-
-![5](https://github.com/zhangxuyang321/MvpDemo/blob/master/ui/5.png)
-
+![3](https://github.com/zhangxuyang321/MvpDemo/blob/master/ui/3.gif)
 
 
